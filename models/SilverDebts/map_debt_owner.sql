@@ -1,0 +1,17 @@
+/*map_debt_owner:
+    MAPPING LOAD
+        "Salesperson code",
+        "Debt owner"
+    FROM [$(vG.ExtractFlatFilesQVDPath)2.Finance\finance_customer_debt_status.qvd] (qvd);*/
+
+SELECT 
+    "Salesperson code",
+    "Debt owner"
+FROM (
+    SELECT
+        "Salesperson code",
+        "Debt owner",
+        ROW_NUMBER() OVER (PARTITION BY "Salesperson code" ORDER BY "Debt owner" ASC) AS row_num
+    FROM {{ source("FF", "FINANCE_CUSTOMER_DEBT_STATUS") }}
+) 
+WHERE row_num = 1

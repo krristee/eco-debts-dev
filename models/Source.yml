@@ -1,0 +1,431 @@
+sources:
+  - name: NAV
+    database: DEV
+    schema: NAV
+    tables:
+      - name: Bank Account
+        identifier: '"Bank Account"'
+      - name: COMPANY
+        identifier: COMPANY
+      - name: Company Information
+        identifier: '"Company Information"'
+      - name: Cust_ Ledger Entry
+        identifier: '"Cust_ Ledger Entry"'
+      - name: Customer
+        identifier: '"Customer"'
+      - name: Detailed Cust_ Ledg_ Entry
+        identifier: '"Detailed Cust_ Ledg_ Entry"'
+      - name: Detailed Vendor Ledg_ Entry
+        identifier: '"Detailed Vendor Ledg_ Entry"'
+      - name: Dimension Value
+        identifier: '"Dimension Value"'
+      - name: Fixed Asset
+        identifier: '"Fixed Asset"'
+      - name: G_L Entry
+        identifier: '"G_L Entry"'
+      - name: G_L Account
+        identifier: '"G_L Account"'  
+      - name: Issued Reminder Header
+        identifier: '"Issued Reminder Header"'
+      - name: Issued Reminder Line
+        identifier: '"Issued Reminder Line"'
+      - name: Vendor
+        identifier: '"Vendor"'
+      - name: Vendor Ledger Entry
+        identifier: '"Vendor Ledger Entry"'
+      - name: Ledger Entry Dimension
+        identifier: '"Ledger Entry Dimension"'
+      - name: Res_ Ledger Entry
+        identifier: '"Res_ Ledger Entry"'   
+  - name: FF
+    database: "{{ env_var('DBT_FF', 'DEV') }}"
+    schema: FF
+    tables:
+      - name: ACCRUALS
+        identifier: ACCRUALS
+      - name: BUSINESS_CODE
+        identifier: BUSINESS_CODE
+      - name: BUSINESS_NAME
+        identifier: BUSINESS_NAME
+      - name: COMPANY_NAME
+        identifier: COMPANY_NAME
+      - name: CONSOLIDATION_GROUP
+        identifier: CONSOLIDATION_GROUP
+      - name: CUSTOMER_VENDOR_NAME_PRIORITY
+        identifier: CUSTOMER_VENDOR_NAME_PRIORITY
+      - name: DEBTS_COMPANIES
+        identifier: DEBTS_COMPANIES
+      - name: FINANCE_BILLER_ACTUAL
+        identifier: FINANCE_BILLER_ACTUAL
+      - name: FINANCE_CUSTOMER_DEBT_STATUS
+        identifier: FINANCE_CUSTOMER_DEBT_STATUS
+      - name: FINANCE_CUSTOMER_DEBT_STATUS_LOG
+        identifier: FINANCE_CUSTOMER_DEBT_STATUS_LOG
+      - name: FINANCE_CUST_VEND_TYPE
+        identifier: FINANCE_CUST_VEND_TYPE
+      - name: LOCATION
+        identifier: LOCATION
+      - name: SUB_BUSINESS_CODE
+        identifier: SUB_BUSINESS_CODE
+      - name: SUB_BUSINESS_NAME
+        identifier: SUB_BUSINESS_NAME 
+      - name: LOG Regionai sanaudos
+        identifier: '"LOG Regionai sanaudos"'
+      - name: LOG Pajamos_EBITDA
+        identifier: '"LOG Pajamos_EBITDA"'
+      - name: LOG REGIONAI_SITE
+        identifier: '"LOG REGIONAI_SITE"'
+      - name: Pagal site
+        identifier: '"Pagal site"'
+      - name: Pagal padalinį
+        identifier: '"Pagal padalinį"'
+      - name: Automobilių būklė
+        identifier: '"Automobilių būklė"'     
+      - name: Vidines
+        identifier: '"Vidines"'       
+      - name: PROJEKTAS1
+        identifier: '"PROJEKTAS1"'  
+      - name: PROJEKTAS2
+        identifier: '"PROJEKTAS2"'
+      - name: Svarstykliu tipas
+        identifier: '"Svarstykliu tipas"'      
+      - name: Mar_Svar_uznulinimas
+        identifier: '"Mar_Svar_uznulinimas"' 
+      - name: Eco_klp_uznulinimas
+        identifier: '"Eco_klp_uznulinimas"' 
+      - name: Equipment tipai
+        identifier: '"Equipment tipai"'   
+      - name: Paslaugos
+        identifier: '"Paslaugos"'     
+      - name: Aiksteles
+        identifier: '"Aiksteles"'
+      - name: SCHEDULE
+        identifier: '"SCHEDULE"'    
+      - name: function
+        identifier: '"function"'   
+      - name: finance_actual2023
+        identifier: '"finance_actual2023"'   
+      - name: finance_off_balance
+        identifier: '"finance_off_balance"'   
+      - name: finance_manual_adjustments
+        identifier: '"finance_manual_adjustments"'   
+      - name: finance_duplicate_turnover
+        identifier: '"finance_duplicate_turnover"'   
+      - name: FINANCE_BUDGET_ESTIMATES
+        identifier: '"FINANCE_BUDGET_ESTIMATES"'  
+      - name: finance_allocation
+        identifier: '"finance_allocation"'
+      - name: snf_finance_allocation
+        identifier: '"snf_finance_allocation"'       
+      - name: region
+        identifier: '"region"'
+      - name: COA_OFF
+        identifier: '"COA_OFF"'
+      - name: ACCOUNT_CATEGORY
+        identifier: '"ACCOUNT_CATEGORY"'
+      - name: ACCOUNT_NAME
+        identifier: '"ACCOUNT_NAME"' 
+      - name: ACCOUNT_GROUPING
+        identifier: ACCOUNT_GROUPING
+      - name: company
+        identifier: '"company"'
+      - name: PARAMETERS_COMPANY
+        identifier: '"PARAMETERS_COMPANY"'
+      - name: FO_ACCOUNT_NO
+        identifier: '"FO_ACCOUNT_NO"'
+      - name: SITE_TYPE
+        identifier: '"SITE_TYPE"'
+      - name: LOAD_ENTRIES
+        identifier: '"LOAD_ENTRIES"'
+      - name: CUSTOMER_TYPE
+        identifier: '"CUSTOMER_TYPE"'  
+      - name: ENTRY_TYPE
+        identifier: '"ENTRY_TYPE"'      
+      - name: MASTERDATAMAPPING_SASKAITA_ISRASYTA
+        identifier: '"MASTERDATAMAPPING_SASKAITA_ISRASYTA"'
+      - name: MASTERDATAMAPPING_MATO_VIENETAS
+        identifier: '"MASTERDATAMAPPING_MATO_VIENETAS"'
+      - name: MASTERDATAMAPPING_KLIENTO_KONTEINERIS
+        identifier: '"MASTERDATAMAPPING_KLIENTO_KONTEINERIS"'
+      - name: MASTERDATAMAPPING_DOKUMENTO_TIPAS
+        identifier: '"MASTERDATAMAPPING_DOKUMENTO_TIPAS"'
+  - name: ENWIS
+    database: DEV
+    schema: ENWIS
+    tables:
+      - name: Tour
+        identifier: '"Tour"'        
+      - name: Vehicle
+        identifier: '"Vehicle"'
+      - name: Waste Mgt_ Employee
+        identifier: '"Waste Mgt_ Employee"'
+      - name: Transport Ledger Entry
+        identifier: '"Transport Ledger Entry"'
+      - name: Trouble Ledger Entry
+        identifier: '"Trouble Ledger Entry"'
+      - name: Waste Management Line
+        identifier: '"Waste Management Line_LIM"' 
+      - name: Personnel Ledger Entry
+        identifier: '"Personnel Ledger Entry"'         
+      - name: Customer
+        identifier: '"Customer"'   
+      - name: Waste Management Header
+        identifier: '"Waste Management Header"'   
+      - name: Service
+        identifier: '"Service"'     
+      - name: G_L Account
+        identifier: '"G_L Account"'      
+      - name: Sales Invoice Header
+        identifier: '"Sales Invoice Header"'  
+      - name: Sales Invoice Line
+        identifier: '"Sales Invoice Line"'    
+      - name: Sales Cr_Memo Header
+        identifier: '"Sales Cr_Memo Header"'  
+      - name: Sales Cr_Memo Line
+        identifier: '"Sales Cr_Memo Line"'     
+      - name: Purch_ Inv_ Header
+        identifier: '"Purch_ Inv_ Header"'  
+      - name: Purch_ Inv_ Line
+        identifier: '"Purch_ Inv_ Line"'
+      - name: Purch_ Cr_ Memo Hdr_
+        identifier: '"Purch_ Cr_ Memo Hdr_"'  
+      - name: Purch_ Cr_ Memo Line
+        identifier: '"Purch_ Cr_ Memo Line"'
+      - name: Vendor
+        identifier: '"Vendor"'   
+      - name: Global Int_ Material Catalog
+        identifier: '"Global Int_ Material Catalog"'
+      - name: Location
+        identifier: '"Location"'   
+      - name: Waste Value Entry
+        identifier: '"Waste Value Entry"'   
+      - name: Waste Entry
+        identifier: '"Waste Entry"' 
+      - name: Waste Ledger Entry
+        identifier: '"Waste Ledger Entry"'  
+      - name: Weighbridge Ticket
+        identifier: '"Weighbridge Ticket"'   
+      - name: Equipment Ledger Entry
+        identifier: '"Equipment Ledger Entry"'   
+      - name: Invoice Ledger Entry   
+        identifier: '"Invoice Ledger Entry"'   
+  - name: PROG
+    database: DEV
+    schema: PROG
+    tables:
+      - name: SENSORS
+        identifier: '"SENSORS"'  
+      - name: DOWNTIME_CLASSIFICATION
+        identifier: '"DOWNTIME_CLASSIFICATION"'     
+      - name: USERS
+        identifier: '"USERS"'
+      - name: NEW_STAT_REP
+        identifier: '"NEW_STAT_REP"'
+      - name: NEW_WORK_DURING_BREAKS_REP
+        identifier: '"NEW_WORK_DURING_BREAKS_REP"'
+      - name: NEW_DOWNTIME_REP
+        identifier: '"NEW_DOWNTIME_REP"'    
+  - name: ASMIL
+    database: DEV
+    schema: ASMIL
+    tables:
+      - name: ROUTE_HISTORY
+        identifier: '"ROUTE_HISTORY"'
+      - name: ROUTE
+        identifier: '"ROUTE"'
+      - name: PERIODIC_ROUTE_PARAMETERS
+        identifier: '"PERIODIC_ROUTE_PARAMETERS"'
+      - name: USER
+        identifier: '"USER"'
+      - name: TERRITORY
+        identifier: '"TERRITORY"'
+      - name: DEPARTMENT
+        identifier: '"DEPARTMENT"' 
+      - name: VEHICLE
+        identifier: '"VEHICLE"' 
+      - name: CLASSIFIER
+        identifier: '"CLASSIFIER"'
+      - name: STAFF
+        identifier: '"STAFF"'
+      - name: WASTE_ORIGIN
+        identifier: '"WASTE_ORIGIN"'
+      - name: ROUTE_HISTORY_STAFF
+        identifier: '"ROUTE_HISTORY_STAFF"'
+      - name: ROUTE_MONITORINGS
+        identifier: '"ROUTE_MONITORINGS"'
+      - name: PICKUP_HISTORY
+        identifier: '"PICKUP_HISTORY"' 
+      - name: CLIENT
+        identifier: '"CLIENT"'
+      - name: ORDER
+        identifier: '"ORDER"'
+      - name: CONTRACT_LINES
+        identifier: '"CONTRACT_LINES"'
+      - name: REPORT_WASTE_DISPOSAL
+        identifier: '"REPORT_WASTE_DISPOSAL"' 
+      - name: BILL_INVOICE
+        identifier: '"BILL_INVOICE"'   
+      - name: CONTRACTS
+        identifier: '"CONTRACTS"'
+      - name: WASTE_OBJECT_CONTRACT_LINES
+        identifier: '"WASTE_OBJECT_CONTRACT_LINES"' 
+      - name: WASTE_LIST
+        identifier: '"WASTE_LIST"'
+      - name: BILL_TOLL_OBJECT
+        identifier: '"BILL_TOLL_OBJECT"'
+      - name: BILL_CONTRACT
+        identifier: '"BILL_CONTRACT"'
+      - name: BILL_PERSON
+        identifier: '"BILL_PERSON"'
+      - name: BILL_INVOICELINE
+        identifier: '"BILL_INVOICELINE"'
+      - name: BILL_CONTRACTOBJECTSWASTEOBJECT
+        identifier: '"BILL_CONTRACTOBJECTSWASTEOBJECT"'   
+      - name: DUMPSTER
+        identifier: '"DUMPSTER"'
+      - name: BILL_CONTRACTOBJECT
+        identifier: '"BILL_CONTRACTOBJECT"' 
+      - name: WASTE_OBJECT
+        identifier: '"WASTE_OBJECT"'   
+      - name: DUMPSTER_TYPE
+        identifier: '"DUMPSTER_TYPE"'
+      - name: BILL_ADDRESS_FIELDS
+        identifier: '"BILL_ADDRESS_FIELDS"'
+      - name: BILL_CONTRACT_ATTRIB_SETTINGS_VALUE
+        identifier: '"BILL_CONTRACT_ATTRIB_SETTINGS_VALUE"'
+      - name: BILL_CONTRACT_ATTRIB_SETTING
+        identifier: '"BILL_CONTRACT_ATTRIB_SETTING"'  
+      - name: BILL_CLASSIFIER
+        identifier: '"BILL_CLASSIFIER"'
+  - name: FO
+    database: DEV
+    schema: D365T
+    tables:
+      - name: MSERP_DIRPARTYTABLEBIENTITY_V
+        identifier: '"MSERP_DIRPARTYTABLEBIENTITY_V"'
+      - name: MSERP_ASSETTABLEBIENTITY_V
+        identifier: '"MSERP_ASSETTABLEBIENTITY_V"'
+      - name: MSERP_BANKACCOUNTTABLEBIENTITY_V
+        identifier: '"MSERP_BANKACCOUNTTABLEBIENTITY_V"'
+      - name: MSERP_CUSTSETTLEMENTBIENTITY_V
+        identifier: '"MSERP_CUSTSETTLEMENTBIENTITY_V"'
+      - name: MSERP_CUSTTABLEBIENTITY_V
+        identifier: '"MSERP_CUSTTABLEBIENTITY_V"'
+      - name: MSERP_CUSTTRANSBIENTITY_V
+        identifier: '"MSERP_CUSTTRANSBIENTITY_V"'
+      - name: MSERP_DIMENSIONATTRIBUTEBIENTITY_V
+        identifier: '"MSERP_DIMENSIONATTRIBUTEBIENTITY_V"'
+      - name: MSERP_GENERALJOURNALACCOUNTENTRYBIENTITY_V
+        identifier: '"MSERP_GENERALJOURNALACCOUNTENTRYBIENTITY_V"'
+      - name: MSERP_VENDSETTLEMENTBIENTITY_V
+        identifier: '"MSERP_VENDSETTLEMENTBIENTITY_V"'
+      - name: MSERP_VENDTABLEBIENTITY_V
+        identifier: '"MSERP_VENDTABLEBIENTITY_V"'
+      - name: MSERP_VENDTRANSBIENTITY_V
+        identifier: '"MSERP_VENDTRANSBIENTITY_V"'
+      - name: MSERP_DIMENSIONATTRIBUTEVALUECOMBINATIONBIENTITY_V
+        identifier: '"MSERP_DIMENSIONATTRIBUTEVALUECOMBINATIONBIENTITY_V"'
+      - name: MSERP_GENERALJOURNALENTRYBIENTITY_V
+        identifier: '"MSERP_GENERALJOURNALENTRYBIENTITY_V"'
+      - name: MSERP_CUSTINVOICEJOURBIENTITY_V
+        identifier: '"MSERP_CUSTINVOICEJOURBIENTITY_V"'
+      - name: MSERP_VENDINVOICEJOURBIENTITY_V
+        identifier: '"MSERP_VENDINVOICEJOURBIENTITY_V"'
+      - name: MSERP_MAINACCOUNTBIENTITY_V
+        identifier: '"MSERP_MAINACCOUNTBIENTITY_V"'
+  - name: BC
+    database: DEV
+    schema: BC
+    tables:
+      - name: ASMENS_KORTELE
+        identifier: '"ASMENS_KORTELE"'
+      - name: COMPANY
+        identifier: '"COMPANY"'
+      - name: DARBO_SANTYKIU_KORTELE
+        identifier: '"DARBO_SANTYKIU_KORTELE"'
+      - name: NEATVYKIMU_DUOMENYS
+        identifier: '"NEATVYKIMU_DUOMENYS"'
+      - name: PASKYRIMU_SARASAS
+        identifier: '"PASKYRIMU_SARASAS"'
+      - name: PAYMENT_LEDGER_ENTRIES
+        identifier: '"PAYMENT_LEDGER_ENTRIES"'
+      - name: PERSON_DISABILITY
+        identifier: '"PERSON_DISABILITY"'
+      - name: PERSON_MEDICAL_EXAMINATIONS
+        identifier: '"PERSON_MEDICAL_EXAMINATIONS"'
+      - name: PERSON_RELATIVE
+        identifier: '"PERSON_RELATIVE"'
+      - name: PRISKAIT_ISSKAIT_IRASAI
+        identifier: '"PRISKAIT_ISSKAIT_IRASAI"'
+      - name: RESERVE_LEDGER_ENTRIES
+        identifier: '"RESERVE_LEDGER_ENTRIES"'
+      - name: TABELIO_IRASAI
+        identifier: '"TABELIO_IRASAI"'
+      - name: WORK_RELATION_LIST
+        identifier: '"WORK_RELATION_LIST"'
+  - name: FOD
+    database: DEV
+    schema: FO_V
+    tables:
+      - name: DIRPARTYTABLE
+        identifier: '"DIRPARTYTABLE"'
+      - name: ENTASSETOBJECTTABLE
+        identifier: '"ENTASSETOBJECTTABLE"'
+      - name: BANKACCOUNTTABLE
+        identifier: '"BANKACCOUNTTABLE"'
+      - name: CUSTSETTLEMENT
+        identifier: '"CUSTSETTLEMENT"'
+      - name: CUSTTABLE
+        identifier: '"CUSTTABLE"'
+      - name: CUSTTRANS
+        identifier: '"CUSTTRANS"'
+      - name: DIMENSIONATTRIBUTEVALUE
+        identifier: '"DIMENSIONATTRIBUTEVALUE"'
+      - name: GENERALJOURNALACCOUNTENTRY
+        identifier: '"GENERALJOURNALACCOUNTENTRY"'
+      - name: VENDSETTLEMENT
+        identifier: '"VENDSETTLEMENT"'
+      - name: VENDTABLE
+        identifier: '"VENDTABLE"'
+      - name: VENDTRANS
+        identifier: '"VENDTRANS"'
+      - name: DIMENSIONATTRIBUTEVALUECOMBINATION
+        identifier: '"DIMENSIONATTRIBUTEVALUECOMBINATION"'
+      - name: GENERALJOURNALENTRY
+        identifier: '"GENERALJOURNALENTRY"'
+      - name: CUSTINVOICEJOUR
+        identifier: '"CUSTINVOICEJOUR"'
+      - name: VENDINVOICEJOUR
+        identifier: '"VENDINVOICEJOUR"'
+      - name: MAINACCOUNT
+        identifier: '"MAINACCOUNT"'
+      - name: DIRPARTYLOCATION
+        identifier: '"DIRPARTYLOCATION"'
+      - name: COMPANYINFO
+        identifier: '"COMPANYINFO"'
+      - name: ASSETTABLE
+        identifier: '"ASSETTABLE"'
+      - name: GLOBAL_OPTIONSET_METADA
+        identifier: '"GLOBAL_OPTIONSET_METADA"'
+      - name: LOGISTICSPOSTALADDRESS
+        identifier: '"LOGISTICSPOSTALADDRESS"' 
+      - name: LOGISTICSELECTRONICADDRESS
+        identifier: '"LOGISTICSELECTRONICADDRESS"'   
+      - name: ENTASSETOBJECTTYPE
+        identifier: '"ENTASSETOBJECTTYPE"'
+      - name: ENTASSETOBJECTLIFECYCLEMODEL
+        identifier: '"ENTASSETOBJECTLIFECYCLEMODEL"'
+      - name: ENTASSETMODEL
+        identifier: '"ENTASSETMODEL"'
+      - name: ENTASSETPRODUCT
+        identifier: '"ENTASSETPRODUCT"'
+      - name: ENTASSETFUNCTIONALLOCATION
+        identifier: '"ENTASSETFUNCTIONALLOCATION"'
+      - name: ENTASSETOBJECTATTRIBUTE
+        identifier: '"ENTASSETOBJECTATTRIBUTE"'
+      - name: HCMWORKER
+        identifier: '"HCMWORKER"'
+      - name: DIRPERSON
+        identifier: '"DIRPERSON"'
+      - name: SALESTABLE
+        identifier: '"SALESTABLE"'  

@@ -1,0 +1,1 @@
+select * from {{ ref('NAV_calendar') }}
