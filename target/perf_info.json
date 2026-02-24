@@ -1,0 +1,51 @@
+{
+    "path_count": 273,
+    "parsed_path_count": 273,
+    "static_analysis_path_count": 118,
+    "static_analysis_parsed_path_count": 118,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 2.0836907000048086,
+    "load_macros_elapsed": 1.0262177999975393,
+    "parse_project_elapsed": 1.0217052000080002,
+    "patch_sources_elapsed": 0.12868049999815412,
+    "process_manifest_elapsed": 0.0815398999984609,
+    "load_all_elapsed": 4.4871006999892415,
+    "projects": [
+        {
+            "project_name": "ecoservice",
+            "elapsed": 1.0085469000041485,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.6684808999998495,
+                    "parsed_path_count": 118
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.3330761000106577,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 119
+        },
+        {
+            "project_name": "dbt_snowflake",
+            "elapsed": 0.0059748000057879835,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.006567299991729669,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 0.00028079999901819974,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        }
+    ]
+}

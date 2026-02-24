@@ -1,0 +1,13 @@
+default:
+  target: offline
+  outputs:
+    offline:
+      type: snowflake
+      account: 'niekur'
+      user: 'niekas'
+      password: 'nėra'
+      role: 'be_rolės'
+      warehouse: 'be_sandėlio'
+      database: 'Mano_Projektas'
+      schema: 'public'
+      threads: 1
